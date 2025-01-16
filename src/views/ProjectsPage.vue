@@ -4,8 +4,8 @@
       <h2 class="top-block__title">Projects</h2>
       <button class="top-block__btn btn btn--main" @click="addNewProject">Add project</button>
     </div>
-    <div v-if="projectStore.projectsLoading">Loading</div>
-    <div v-else-if="!projectStore.projects.length">Ще нема проектів. Час створювати)</div>
+    <div v-if="projectStore.projectsLoading">Loader</div>
+    <div v-else-if="!projectStore.projects.length">You don't have any project. Create)</div>
     <ProjectsTable v-else :projects="projectStore.projects" />
     <ModalWindow :show="showModal" @close-window="modalToggler">
       <ProjectHandler @modalToggler="modalToggler" />

@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"npm run mock\" \"vite\"",
+    "dev": "vite",
     "mock": "npm --prefix ./mock-server run start",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",

@@ -9,6 +9,18 @@ On the main page, users can add, edit, and delete projects. Each row is also a l
 
 On the tasks page, the tasks of the selected project are loaded. There is a chart displaying the current project's tasks by status. Sorting and filtering functionalities are also implemented here and persist after page reloads using localStorage. A modal window is used for adding and editing tasks.
 
+A mock server has also been created to support the development process.
+
+## Launching the project
+
+For mockserver launching:
+
+- Open "mockserver" directory -> npm i -> npm start
+
+For project launching:
+
+- In root directory -> npm i -> npm run dev
+
 ## Project Setup
 
 ```sh
